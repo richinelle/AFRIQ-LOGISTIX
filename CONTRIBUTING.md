@@ -54,3 +54,10 @@ Utilisé lorsque tu ajoutes des tests manquants ou que tu modifies des tests exi
 
 Exemple : test(api): ajouter des tests unitaires pour le controlleur de produits
 Exemple : test(api): ajouter des tests unitaires pour le controlleur de produits
+
+
+🧪 test (Tests)
+Utilisé lorsque tu ajoutes des tests manquants ou que tu modifies des tests existants (PHPUnit, Jest, etc.).
+
+Exemple : test(api): ajouter des tests unitaires pour le controlleur de produits
+Exemple : test(api): ajouter des tests unitaires pour le controlleur de produits
