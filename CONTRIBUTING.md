@@ -47,27 +47,3 @@ Exemple : perf(database): ajouter un index sur la colonne email
 Utilisé lorsque tu ajoutes des tests manquants ou que tu modifies des tests existants (PHPUnit, Jest, etc.).
 
 Exemple : test(api): ajouter des tests unitaires pour le controlleur de produits
-
-📦 ci ou build
-ci : Modifications liées à tes scripts de déploiement continu ou d'intégration (GitHub Actions, GitLab CI). Exemple : ci: ajouter l'étape de staging sur GitHub Actions
-
-build : Modifications affectant le système de build (ex: configuration de Vite, Webpack, Composer). Exemple : build: mettre à jour la version minimale de PHP requis
-
-2. Les options et éléments structurels
-Pour enrichir tes commits, tu peux utiliser des éléments optionnels très puissants :
-
-A. La Portée (scope)
-C'est le mot entre parenthèses juste après le type. Il sert à indiquer quelle partie précise du projet est impactée.
-
-Syntaxe : type(scope): message
-
-Exemple : feat(api): ajouter le endpoint pour récupérer les utilisateurs
-
-B. Le Changement Majeur (BREAKING CHANGE)
-Si ta modification casse la compatibilité ascendante (par exemple, si tu supprimes une table dans la base de données ou si tu changes complètement une route d'API), tu dois le signaler de deux manières :
-
-En ajoutant un point d'exclamation ! juste avant les deux-points.
-
-En expliquant la rupture dans le corps du message.
-
-Exemple court :
