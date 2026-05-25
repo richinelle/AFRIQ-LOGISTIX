@@ -33,31 +33,3 @@ Utilisé pour les changements cosmétiques qui n'affectent pas la logique du cod
 
 Exemple : style(navbar): ajuster l'espacement des boutons
 
-♻️ refactor (Refactorisation)
-Utilisé pour une modification du code de production qui ne corrige pas de bug et n'ajoute pas de fonctionnalité, mais qui améliore la structure ou la lisibilité du code.
-
-Exemple : refactor(controllers): extraire la logique de paiement dans un Service
-
-⚡ perf (Performance)
-Utilisé pour une modification du code qui sert spécifiquement à améliorer les performances (vitesse, mémoire).
-
-Exemple : perf(database): ajouter un index sur la colonne email
-
-🧪 test (Tests)
-Utilisé lorsque tu ajoutes des tests manquants ou que tu modifies des tests existants (PHPUnit, Jest, etc.).
-
-Exemple : test(api): ajouter des tests unitaires pour le controlleur de produits
-Exemple : test(api): ajouter des tests unitaires pour le controlleur de produits
-
-🧪 test (Tests)
-Utilisé lorsque tu ajoutes des tests manquants ou que tu modifies des tests existants (PHPUnit, Jest, etc.).
-
-Exemple : test(api): ajouter des tests unitaires pour le controlleur de produits
-Exemple : test(api): ajouter des tests unitaires pour le controlleur de produits
-
-
-🧪 test (Tests)
-Utilisé lorsque tu ajoutes des tests manquants ou que tu modifies des tests existants (PHPUnit, Jest, etc.).
-
-Exemple : test(api): ajouter des tests unitaires pour le controlleur de produits
-Exemple : test(api): ajouter des tests unitaires pour le controlleur de produits

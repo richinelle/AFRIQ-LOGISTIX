@@ -46,8 +46,8 @@ jobs:
       - name: Build et Push image
         uses: docker/build-push-action@v5
         with:
-        context: ./backend        # ← dossier contenant le Dockerfile
-        file: ./backend/Dockerfile 
+          context: ./backend/dockerfiles
+          file: ./backend/dockerfiles/Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/projet_fil_rouge:latest
 
