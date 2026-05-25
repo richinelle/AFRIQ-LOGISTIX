@@ -1,5 +1,7 @@
 git commit -m "feat :Ajout de la structure du projet avec le backend"
 
+ git commit -m "feat :ajout des composants docker"
+
 
 1. Les principaux Types de Commit (avec explications)
 Voici la liste des préfixes standardisés que tu peux utiliser selon la nature de ta modification :
