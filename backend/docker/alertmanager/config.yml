@@ -1,0 +1,29 @@
+global:
+  smtp_smarthost: 'smtp.gmail.com:587'
+  smtp_from: 'richinellelaurence@gmail.com'
+  smtp_auth_username: 'richinellelaurence@gmail.com'
+  smtp_auth_password: 'bnlmhmcnhunnfvnn'
+  smtp_require_tls: true
+
+route:
+  group_by: ['alertname']
+  group_wait: 30s
+  group_interval: 5m
+  repeat_interval: 1h
+  receiver: 'email-alert'
+
+receivers:
+  - name: 'email-alert'
+    email_configs:
+      - to: 'richinellelaurence@gmail.com'
+        headers:
+          Subject: 'Alerte SGEE: {{ .GroupLabels.alertname }}'
+        html: '{{ range .Alerts }}{{ .Annotations.description }}{{ end }}'
+        send_resolved: true
+
+inhibit_rules:
+  - source_match:
+      severity: 'critical'
+    target_match:
+      severity: 'warning'
+    equal: ['alertname']
